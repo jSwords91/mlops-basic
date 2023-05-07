@@ -1,0 +1,27 @@
+data_ingestion:
+  file_path: air-passengers.csv
+
+data_processing:
+  date_columns:
+    - "Month"
+  int_columns:
+    - "#Passengers"
+  column_name_mapping:
+    "Month" : "date"
+    "#Passengers" : "y"
+
+train_test_split:
+  train_ratio: 0.7
+  dev_ratio: 0.15
+  test_ratio: 0.15
+
+preprocessing:
+  numeric_columns:
+    - y
+  categorical_columns:
+    - quarter
+    - month
+
+logistic_regression:
+  solver: lbfgs
+  C: 1.0
