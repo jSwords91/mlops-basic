@@ -15,13 +15,9 @@ train_test_split:
   dev_ratio: 0.15
   test_ratio: 0.15
 
-preprocessing:
-  numeric_columns:
-    - y
-  categorical_columns:
-    - quarter
-    - month
-
 logistic_regression:
   solver: lbfgs
   C: 1.0
+
+target:
+  variable_name: "target"
