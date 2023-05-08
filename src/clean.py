@@ -2,7 +2,6 @@ from typing import List, Dict
 import pandas as pd
 from dataclasses import dataclass
 from utils import read_config
-from ingestion import DataIngestion
 
 from dataclasses import dataclass
 from typing import List, Dict
